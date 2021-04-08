@@ -8,12 +8,10 @@
 }
 
 /* ==== Body */
-
 body {
     max-width: 100%;
     min-height: 100vh;
 }
-
 .nav-bar {
     max-width: 100%;
     min-height: 0rem;
@@ -26,31 +24,25 @@ div.nav-bar__container {
     justify-content: space-between;
     padding: 1rem 0.5rem;
 }
-
 div.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
 }
-
 ul.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
 }
-
-
 ul li {
     margin: 0 1rem;
     list-style: none;
     font-size: 1.1rem;
 }
-
 ul li a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
 }
-
 ul li a:hover {
     color: #304353;
     background: #fff;
@@ -59,52 +51,32 @@ ul li a:hover {
 .burger-menu {
     display: none;
 }
+
 /* ===== Media Queries For Nav Bar! */
-
 @media (max-width:684px) {
-
     ul.nav-links {
         display: none;
     }
-
     .burger-menu {
         display: none;
     }
-    
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ===== Hero Section */
 
 .hero-section {
     max-width: 100%;
     background: #304353;
 }
-
 div.hero-section__container {
     max-width: 81.25rem;
     padding: 10rem;
     margin: 0px auto;
 }
-
 div.hero-content-heading {
     text-align: center;
 }
-
 div.hero-content-heading h3 {
     font-size: 2rem;
     text-transform: uppercase;
@@ -112,23 +84,21 @@ div.hero-content-heading h3 {
     font-weight: 300;
     color: #bcc3c7;
 }
-
 div.hero-content-heading p {
     text-align: center;
-    padding-top: 0.7rem;
+    padding: 0.7rem 100px 0px 100px;
     color: #88949B;
     font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 300;
+    line-height: 1.5rem;
 }
-
 div.hero-content-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
 }
-
 div.hero-content-btn a {
     background: #E44C65;
     text-decoration: none;
@@ -138,24 +108,21 @@ div.hero-content-btn a {
     border-radius: 3px;
     letter-spacing: 2px;
 }
-
 div.hero-background {
     background: #f0f0f0;
     padding: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
+}
 div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 60px 50px 5px;
-    width: 550px;
+    max-width: 550px;
     min-height: 220px;
-    position: relative;
 }
-
 div.background h4 {
     padding: 2rem;
     color: #555657;
@@ -163,70 +130,83 @@ div.background h4 {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 div.background p {
     color: #A6A5AA;
     padding-left: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
-
 div.hero-background-pos {
-    position: absolute;
+    /* position: sticky; */
     right: 0px;
-    left: 66%;
+    margin-left: -70px;
     background: #fff;
-    width: 140px;
+    min-width: 140px;
     height: 140px;
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    z-index: 1;
 }
 
-
 /* ===== Media Queries For Hero Section! */
-
 @media (max-width:800px) {
-
+    div.hero-content-heading p {
+        padding: 10px 10px 0px 10px;
+    }
     div.hero-section__container {
         padding: 10rem 5rem;
     }
-
     div.hero-background-pos {
         left: 70%;
     }
+    div.hero-background {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 1rem;
+        min-height: 500px;   
+    }
+    div.hero-background-pos {
+        margin-left: 0px;
+        margin-bottom: -50px;
+    }
+    div.background {
+        padding: 30px 15px 30px 15px;
+    }
+    div.background h4 {
+        padding: 40px 0px 20px 0px;
+    }
+    div.background p {
+        padding-left: 0rem;
+    }
     
 }
-
 @media (max-width: 546px) {
 
     div.hero-section__container {
         padding: 6rem 1.5rem;
-    }
-    
+    }   
 }
 
 
+/* ===== Snapshot team */
 
 div.snapshot-team {
     background: #f0f0f0;
     text-align: center;
     padding-top: 2rem;
 }
-
 div.snapshot-team h2 {
     color: #555657;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 div.snapshot-team p {
     color: #A6A5AA;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
 }
-
 div.snapshot-box {
     display: flex;
     justify-content: center;
@@ -234,12 +214,10 @@ div.snapshot-box {
     background: #f0f0f0;
     padding: 4rem 1rem;
 }
-
 div.snapshot-box-content {
     display: flex;
     justify-content: space-between;
 }
-
 div.box1 {
     flex: 1 1 81.25px;
     background: #fff;
@@ -250,7 +228,6 @@ div.box1 {
     border-radius: 2px;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
-
 div.box3 {
     flex: 1 1 81.25px;
     background: #304353;
@@ -261,14 +238,12 @@ div.box3 {
     border-radius: 2px;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
-
 div.box3 h5 {
     text-align: center;
     padding-top: 2rem;
     color: #E44C65;
     font-size: 1rem;
 }
-
 div.circle {
     display: flex;
     margin: 0 auto;
@@ -276,10 +251,8 @@ div.circle {
     height: 90px;
     border-radius: 50%;
     background: #bcc3c7;
-    margin-top: 2rem;
-    
+    margin-top: 2rem;   
 }
-
 div.box1 h5 {
     text-align: center;
     padding-top: 2rem;
@@ -287,120 +260,97 @@ div.box1 h5 {
     font-size: 1rem;
 }
 
-
 /* ===== Media Queries For Snapshot Team! */
-
 @media (max-width:710px) {
-
     div.snapshot-box-content {
         flex-wrap: wrap;
     }
-
     div.snapshot-team p {
         padding: 0.8rem 1.7rem;
     }
-    
 }
-
-
-
 div.gallery-section {
     background: #fff;
     padding: 4rem;
 }
-
 div.gallery-content {
     text-align: center;
 }
-
 div.gallery-content h4 {
     color: #555657;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 div.gallery-content p {
     color: #A6A5AA;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
 }
-
 div.gallery-img {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    padding-top: 3rem;
 }
-
 div.img {
     margin: 10px;
 }
-
 div.img img {
     display: block;
     width: 250px;
     height: auto;
 }
 
-
 /* ===== Media Queries For Gallery Section! */
 
 @media (max-width:710px) {
-
     div.gallery-section {
         padding: 1.2rem;
     }
-
     div.gallery-img > * {
         flex: 1 250px;
      }
-
     div.img img {
         display: block;
         width: 100%;
         height: auto;
     }
-    
 }
 
-
+/* ===== footer */
 
 div.footer {
     background: #304353;
+    padding-top: 3rem;
 }
 .footer__container {
     max-width: 81.25rem;
     padding: 1rem;
     margin: 0px auto;
 }
-
 div.footer-content {
     text-align: center;
 }
-
 div.footer-content h4 {
     color: #bcc3c7;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 div.footer-content p {
     color: #88949B;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
 }
-
 div.footer-input {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
 }
-
 input[type="text"] {
     margin-right: 10px;
     padding: 10px 20px;
@@ -412,7 +362,6 @@ input[type="text"] {
     font-size: 1rem;
     border-radius: 2px;
 }
-
 input[type="email"] {
     margin-right: 0px;
     padding: 10px 20px;
@@ -424,18 +373,15 @@ input[type="email"] {
     font-size: 1rem;
     border-radius: 2px;
 }
-
 ::placeholder {
     color: #A6A5AA;
 }
-
 div.footer-textarea {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
 }
-
 textarea {
     width: 70%;
     height: 150px;
@@ -445,14 +391,12 @@ textarea {
     background: transparent;
     color: #f0f0f0;
 }
-
 div.footer-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
 }
-
 div.footer-btn a {
     background: #E44C65;
     text-decoration: none;
@@ -462,7 +406,6 @@ div.footer-btn a {
     border-radius: 3px;
     letter-spacing: 2px;
 }
-
 div.footer h6 {
     text-align: center;
     color: #88949B;
@@ -470,19 +413,15 @@ div.footer h6 {
     padding-top: 6rem;
 }
 
-
 /* ===== Media Queries For Footer Section! */
 
 @media (max-width:710px) {
-
     div.footer {
-        padding: 1.2rem;
+    padding: 1.2rem;
     }
-
     input[type="text"] {
         width: 50%;
     }
-    
     input[type="email"] {
         width: 50%;
     }
